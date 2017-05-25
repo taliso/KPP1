@@ -1,0 +1,968 @@
+
+body {
+    background-color: gray;
+}
+
+#logo {
+  float: left;
+  padding:1px;
+}
+#saturs
+{
+  width: 99%;
+  margin: 0 auto;
+  padding: 0px;
+}
+#virsraksts-konteineris {
+	background-color:black;
+	color:white;
+	padding:1px;
+	height:60px;
+}
+#galvenais-virsraksts {
+	float:left;
+}
+#sub-virsraksts {
+	float:left;
+}
+#divLogin{
+	background-color:blue;
+	float:right;
+	color:white;
+	width:100px;
+	height:20px;
+}
+#divMenju{
+	background-color:blue;
+	padding:8px;
+	height:44px;
+}
+#divFormMenu{
+	background-color:blue;
+	height:44px;
+	
+}
+ td.npk {
+	width: 3%;
+    /* border: 1px solid black;*/
+    text-align: center;
+    /*padding: 5px;*/
+    font-size: 12px;
+ 	font-family: verdana;
+ 	color:#808080;
+    
+ }
+td.teksts {
+	width: 40%;
+    /* border: 1px solid black;*/
+     /*padding: 5px;*/
+    font-size: 12px;
+ 	font-family: verdana;
+ 	color:#808080;
+     
+ }
+td.ievade {
+	width: 57%;
+    font-size: 12px;
+ 	font-family: verdana;
+ 	color:#000080;
+
+ }
+ 
+ 
+td.tcol0 {
+		width:3%;
+		text-align: center;
+		font-family: verdana;
+	    font-size: 12px;
+	    color:#004080;
+	    
+ }
+ 
+ td.tcol1 {
+ 	width:8%;
+ 	text-align: center;
+ 	font-size: 12px;
+	font-family: verdana; 	
+ }
+ 
+ td.tcol2 {
+  	width:8%;
+ 	text-align: center;
+ 	font-size: 12px;
+ 	font-family: verdana;
+ }
+ 
+ td.tcol3 {
+   	width:20%;
+	font-size: 12px;
+	font-family: verdana;
+	 margin-left: 10px;
+ }
+ 
+ td.tcol4 {
+ 	width:20%;
+ 	font-size: 12px;
+ 	font-family: verdana;
+ }
+ 
+ td.tcol5 {
+   	width:10%;
+ 	font-size: 12px;
+ 	font-family: verdana;
+ }
+ 
+ td.tcol6 {
+ 	width: 10%;
+	font-size: 12px;
+ 	font-family: verdana;
+ }
+ td.tcol7 {
+	font-size: 12px;
+ 	font-family: verdana;
+ 	width:	5%;
+ }
+ td.tcol8 {
+	
+	font-size: 12px;
+ 	font-family: verdana;
+ 	width: 4%;
+ }
+ td.tcol9 {
+	
+	font-size: 12px;
+ 	font-family: verdana;
+ 	width: 4%;
+ }
+ 
+td.htcol0 {
+ 	width:3%;
+ 	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+ 	color:white;
+ }
+
+td.htcol1 {
+ 	width:8%;
+ 	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+ 	color:white;
+ }
+   
+td.htcol2 {
+ 	width:8%;
+ 	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+ 	color:white;
+ }
+ 
+ td.htcol3 {
+  	width:20%;
+ 	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+ 	color:white;
+ }
+ 
+ td.htcol4 {
+   	width:20%;
+ 	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+ 	color:white;
+ 
+ }
+ 
+ td.htcol5 {
+ 	width:10%;
+  	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+ 	color:white;
+	
+ }
+ 
+ td.htcol6 {
+ 	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+	width:10%;
+	color:white;
+ }
+ 
+ td.htcol7 {
+ 	width:5%;
+  	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+ 	color:white;
+  }
+
+td.htcol8 {
+ 	width:5%;
+  	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+  }
+
+td.htcol9 {
+  	text-align: center;
+ 	border: 1px solid black;
+ 	font-family: verdana;
+	font-size: 12px;
+ 	background-color:cornflowerblue;
+  }
+  
+ ul li {
+    display: inline;
+    border: 2px solid aqua;
+    padding: 3px;
+    background: #1f16a4;
+    border-radius: 5px;
+    height: 29px;
+    width: 207px; 
+    text-align: center;
+    margin-right: 8px;
+    float: left;
+    font-size: 14px;
+    font-family: verdana;
+    margin: 2px;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+a {			
+    text-decoration: none;
+    font-weight: bold;
+    color: #000080;
+    height: 100%;
+    display: block;
+    padding: 5px;
+    text-decoration: underline;	
+    }
+    
+a:hover {
+	
+}
+
+#divTools{
+	width:20%;
+	float:left;
+	text-align: left;
+}
+
+#mnTools {
+	display: inline;
+    border: 2px solid indigo;
+	padding: 1px;
+    background: lightcyan;
+	height: 16px;
+	width: 40%;
+	text-align: center;
+	margin-right: 6px;
+	float: left;
+	font-size: 12px;
+	font-family: verdana;
+	margin: 1px;
+	
+}
+ #mnaTools {
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: #a59e9e;
+    height: 100%;
+    display: block;
+    padding: 0px;
+    background: #c0c0c0;
+    float: left;
+    width: 60px;
+    border: solid 2px gray;
+    margin: 2px;
+}
+
+#mnaToolsSel{
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    height: 100%;
+    display: block;
+    padding: 0px;
+    float: left;
+    width: 60px;
+    border: solid 2px white;
+    margin: 2px;
+}
+
+#mnNavig{
+	display: inline;
+    border: 3px solid indigo;
+	padding: 3px;
+    background: lightcyan;
+	border-radius: 5px;
+	height: 16px;
+	width: 7%;
+	text-align: center;
+	margin-right: 8px;
+	float: right;
+	font-size: 14px;
+	font-family: verdana;
+	margin: 2px;
+}
+#mnaNavig{
+    text-decoration: none;
+    font-weight: bold;
+    color: indigo;
+    height: 100%;
+    display: block;
+    padding: 0px;	
+}
+#mnaEvent{
+	font-size: 14px;
+	font-family: verdana;
+	margin: 2px;
+	float:left;
+}
+#mnAddEvents{
+	display: inline;
+    border: 3px solid indigo;
+	padding: 3px;
+    background: lightcyan;
+	border-radius: 5px;
+	height: 16px;
+	width: 7%;
+	text-align: center;
+	float: right;
+	font-size: 14px;
+	font-family: verdana;
+	margin: 2px;
+
+}
+#divMaster{
+/*	width:1800px;*/
+/*	height:1000px;*/
+}
+
+#divGalva{
+	background-color:white;
+	/* border-style: solid; */
+	margin:auto;
+	height:76px;
+	width:100%;
+}   
+#divLogo{
+ 	background-color: #4a47bf;
+	float:left;
+	color:red;
+	width:190px;
+	height:76px;
+}
+#divTitle{
+	background-color: #002060;
+	float:left;
+	width:100%;
+	height:43px;
+	text-align: center;
+}
+#divInfo{
+	background-color: #0070c0;
+	float:left;
+	color:red;
+	width:100%;
+	height:26px;
+}
+
+#divAdmin{
+	float:left;
+	/*border: 1px solid black;*/
+	width:20%;
+	height:100%
+	
+}
+#divPapildInfo{
+	float:left;
+	width:30%;
+	height:100%
+	
+}
+#divKomp{
+	float:left;
+	width:50%;
+	height:100%;
+}
+#divVersija{
+	float:left;
+	width:50%;
+	height:100%;
+	color: burlywood;
+	font-family: verdana;
+	font-size: 11px;
+	
+}
+#divDialog{
+	/*border-style: solid;*/
+	height:3%;
+	width:82%;
+	margin:auto;
+}
+
+#divDialText{
+	float:left;
+	width:80%;
+	height:100%;
+	/*border-style: solid;*/
+
+	
+}
+#divDialJa{
+	float:left;
+	width:9%;
+	height:100%;
+	/*border-style: solid;*/
+	
+}
+#divDialNe{
+	float:left;
+	width:9%;
+	height:100%;
+	/*border-style: solid;*/
+	
+}
+#divBody{
+	/*border-style: solid;*/
+	margin: 0 auto;
+	width:82%;
+}	
+#divMenu{	
+	float:left;
+	/*border-style: solid;*/
+	width:15%;
+	height:95%;
+}
+#divMenuTitle{
+	width:100%;
+	height:5%;
+	background:indigo;
+	color: ivory;
+	text-align: center;
+	font-family: verdana;
+	font-size: 20px;
+}
+#divMenuSar{
+	width:100%;
+	background:ivory;
+}
+#divDarba{
+	width:99%;
+}	
+
+#divFormTitle{
+	width:100%;
+	height:4%;
+	background: indigo;
+    color: ivory;
+    text-align: center;
+    font-family: verdana;
+    font-size: 16px;
+}
+
+#divForma{
+	width:100%;
+	
+}
+#divView{
+	width:98%;
+	 /* border: 1px solid black; */
+	float:left;
+}
+#divFormNavig{
+	width:100%;
+	height:30px;
+	text-align: center;
+	border-bottom: indigo 3px solid;
+	background: #15157e;
+}
+
+#divStatus{
+	height:5%;
+	float:left;
+	width:100%;
+}
+#divLoginInfo{
+	float:left;
+	width:45%;
+	height:93%;
+}
+#divLUser{
+	float:left;
+	border-left:1px solid;
+	border-left-color: darkcyan;
+	color: #38d4d4;
+	width:10%;
+	height:100%;
+	text-align: right;
+	font-family: verdana;
+	font-size: 12px;
+	margin-right: 5px;
+}
+#divAgents{
+	float:left;
+	border-left:1px solid;
+	border-left-color: darkcyan;
+	color: #38d4d4;
+	width:25%;
+	height:100%;
+	text-align: right;
+	margin-right: 5px;
+	font-family: verdana;
+	font-size: 12px;
+	
+}
+#divPswTxt{
+	float:left;
+	border-left:1px solid;
+	border-left-color: darkcyan;
+	color: #38d4d4;
+	width:30%;
+	height:100%;
+	text-align: right;
+	margin-right: 5px;
+	font-family: verdana;
+	font-size: 12px;
+	
+}
+#divPswIev{
+	float:left;
+	border-left:1px solid;
+	border-left-color: darkcyan;
+	color: #38d4d4;
+	width:14%;
+	height:100%;
+	text-align: right;
+	margin-right: 5px;
+	font-family: verdana;
+	font-size: 12px;
+	
+}
+#divIeIz{
+	float:left;
+	border-left:1px solid;
+	border-left-color: darkcyan;
+	color: #38d4d4;
+	border-right:1px solid;
+	border-right-color: darkcyan;
+	width:10%;
+	height:100%;
+	text-align: center;
+	margin-right: 5px;
+	font-family: verdana;
+	font-size: 12px;
+
+}
+#tukss{
+	width:100%;
+	height:100%;
+	background:ivory;
+	
+}
+
+#divEventForm{
+	width:100%;
+	background:ivory;
+	margin-bottom: 9px;
+}
+
+td.hapraksts1{
+	font-family: verdana;
+	font-size: 14px;
+	width: 15%;
+	border-collapse: collapse;
+	text-align: right;
+	color: gray;
+	
+}
+
+td.hinfo1{
+	font-family: verdana;
+	font-size: 14px;
+	
+	width: 15%;
+	text-align: center;
+	color: blueviolet;
+	
+}
+td.hapraksts2{
+	font-family: verdana;
+	font-size: 14px;
+	width: 15%;
+	/* border: 1px solid black; */
+	text-align: right;
+	color: gray;
+}
+
+td.hinfo2{
+	font-family: verdana;
+	font-size: 14px;
+	/* border: 1px solid black; */
+	width: 20%;
+	text-align: center;
+	color: blueviolet;
+}
+
+
+#divEventHead{
+	display:block;
+	background: blueviolet;
+	color: #ffff00;
+	width: 100%;
+	border: 1px solid black;
+	height: 45px;
+}
+
+#divEventTitle{
+	display:block;
+	background: blueviolet;
+	color: indigo;
+	width: 100%;
+	border: 1px solid black;
+	height: 23px;
+}
+
+#divEvent{
+	width: 98%;
+    height: 40px;
+    border: 1px solid blue;
+    margin: 10px;
+    background: aliceblue;
+}
+
+
+#divEvents{
+	width:100%;
+	border:1px solid blue;
+}	
+
+#divEventGalva{
+	width:100%;
+}
+
+#divEventUzdevums{
+	width:100%;
+}
+
+#divEventLemums{
+	width:100%;
+}
+
+#divEventIzpilde{
+	width:100%;
+}
+
+#selekts{
+	font-family: verdana;
+	font-size: 12px;
+}
+
+td.apraksts1{
+	width:15%;
+	text-align: right;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+td.apraksts2{
+	width:20%;
+	font-family: verdana;
+	font-size: 14px;
+	text-align: right;
+}
+
+td.info1{
+	width:15%;
+	text-align: left;
+	border: 1px solid gray;
+	font-family: verdana;
+	font-size: 14px;
+}
+
+td.info2{
+	width:30%;
+	font-family: verdana;
+	font-size: 14px;
+	text-align: left;
+	padding-left: 11px;
+}
+
+#dvtitle {
+	background: brown;
+	text-align: center;
+}
+
+tr td {
+    border-bottom: 1px solid silver;
+}
+
+#divEventFormTitle {
+    background: #844c4c;
+    text-align: center;
+    float: left;
+    width: 100%;
+}
+
+.ievade textarea {
+	width: 80%;
+}
+
+#mnEvNavig {
+	color: brown;
+	display: inline;
+    border: 3px solid brown;
+	padding: 2px;
+    background: #fbe7bf;
+	border-radius: 5px;
+	height: 16px;
+	width: 10%;
+	text-align: center;
+	margin-right: 8px;
+	font-size: 14px;
+	font-family: verdana;
+	margin: 2px;
+	width: 60px;
+}
+
+#mnaTasks {
+	font-size: 12px;
+	font-family: verdana;
+	text-align: left;
+	color:blue;
+	text-decoration: underline;
+}
+
+#divTask {
+	border: 1px solid brown;
+	width: 100%;
+	background: #fffbdc;
+	margin: 2px;
+}
+#divTextCenter {
+	text-align: center;
+	width:25%;
+	padding:5px;
+	float:left;
+}
+
+#divNewEventTitle{
+	float:left;
+	width:100%;
+	background: darkcyan;
+}
+
+#divEventMenu {
+	width:75%;
+	float:left;
+	background: darkseagreen;
+}
+
+#divFailiTitle {
+	background: darkseagreen;
+	color: #0b13a7;
+	width:25%;
+	float:left;
+	height: 32px;	
+}
+
+#divNewEvent{
+	border: 2px solid cadetblue;	
+    float: left;
+    margin-bottom: 12px;
+}
+
+#divEventView{
+	border: 2px solid cadetblue;	
+    float: left;
+    margin-bottom: 12px;
+}
+
+#mnEventi{
+	display: inline;
+	border: 3px solid #844d18;
+	padding: 3px;
+	background: #d5a314;
+	border-radius: 5px;
+	height: 20px;
+	width: 207px;
+	text-align: center;
+	margin-right: 8px;
+	float: left;
+	font-size: 14px;
+	font-family: verdana;
+	margin: 2px;
+	color: #efe636;
+}
+#ev_task{
+	border: 2px solid cadetblue;
+	float: left;
+	margin-bottom: 12px;
+	background: cornsilk;
+}
+#ev_task_title{
+	border: 2px solid cadetblue;
+	float: left;
+	margin-bottom: -2px;
+	background: burlywood;
+}
+#user_select{
+	width:20%;
+	margin:2px;
+}
+#divLietSar{
+	float:left;
+	width:60%;
+	border-right: 1px solid #4b0082;
+	color: #3bff2f;
+}
+#divLietKart{
+	float:left;
+	width:39%;
+}
+#divAdminTitle {
+	background: black;
+	text-align: center;
+	float:left;
+	width:100%;
+}
+#divAdminForma {
+	background: #303030;
+	text-align: center;
+	float:left;
+	width: 100%;
+
+}
+#divAdminMenju {
+	text-align: left;
+	margin-left: 5px;
+	margin-top: 40px;
+	float:left;
+	width:10%;
+	border: 2px solid #474444;
+}
+#divAdminWork {
+	background: #565c59;
+	text-align: left;
+	float:left;
+	width: 89%;
+
+}
+#mnAdmin {
+	text-align: left;
+	margin-left: 20px;
+	float:left;
+	text-decoration: underline;
+	color: #15d117;
+	font-family: verdana;
+	font-size: 13px;
+}
+#spTitle {
+	text-align: center;
+	font-size: 16px;
+	font-family: verdana;
+	color:yellow;
+}
+#spListTitle {
+	text-align: center;
+	font-size: 12px;
+	font-family: verdana;
+	color: #ffeb05;
+}
+#spList {
+	text-align: center;
+	font-size: 11px;
+	font-family: verdana;
+	color: #31d1ff;
+}
+#kart_tab_td_1 {
+	width:30%;
+	text-align: left;
+	font-size: 14px;
+	font-family: verdana;
+	color: #ffeb05;
+}
+#kart_tab_td_2 {
+	width:30%;
+	text-align: left;
+	color: #38d4d4;
+
+}
+#kart_tab_td_3 {
+	width:30%;
+	text-align: left;
+	color: #38d4d4;
+
+}
+#kart_tab_td_4 {
+	width:10%;
+	text-align: left;
+	color: #38d4d4;
+
+}
+#dvKartGalv {
+	background: dimgray;
+	color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

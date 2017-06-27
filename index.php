@@ -48,17 +48,18 @@ $kl_statusi=array (
     <form action="#" method="post" enctype="multipart/form-data">
         <div id="dvMaster" style="width:100%;"><!--kopējais    -->
             <div id="dvVirsraksts"><!-- Title -->
-                <span id="spTitle"> Kravu pāvaldība </span>
+                <span id="spTitle"> CAURLAIDE </span>
                 <div>
                     <table style="width:100%;">
                         <tr>
-                            <td>Skats no:
-                                <input type="submit" name="spodribas" value="Spodrības">
-                                <input type="submit" name="lauku" value="Lauku">
-                                <input type="submit" name="valmiera" value="Valmiera">
-                            </td>
+                            <td>
+<!--                            Skats no:-->
+<!--                                <input type="submit" name="spodribas" value="Spodrības">-->
+<!--                                <input type="submit" name="lauku" value="Lauku">-->
+<!--                                <input type="submit" name="valmiera" value="Valmiera">-->
+<!--                            </td>-->
                             <td></td>
-                            <td><input type="submit" name="jauns_ieraksts" value="+"></td>
+<!--                            <td><input type="submit" name="jauns_ieraksts" value="+"></td>-->
                         </tr>
                     </table>
 

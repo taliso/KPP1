@@ -6,11 +6,8 @@
  * Time: 10:47
  */
 
-if ($_SESSION['REC']['ID']>0) {
-    $saraksts = sqltoarray($_SESSION['REC']['ID'], 'transports', '', $db);
-    $rec=$saraksts[0];
-} else {
-    $reis=max_reis($db);
+if ($_SESSION['REISS']['STATUS']==-1) {
+
     $rec=array(
         'reisa_nr'=> $reis,
         'klients'=>'' ,
@@ -61,7 +58,7 @@ if ($_SESSION['REC']['ID']>0) {
                 <td id="kart_tab_td_1">Krava</td>
 
                 <td id="kart_tab_td_2"><input type="text" name="krava" value="<?php echo $rec['krava']; ?>"></td>
-                <td id="kart_tab_td_3"></td>
+                <td id="kart_tab_td_3"><input type="submit" name="sub_krava" value="..."></td>
             </tr>
             <tr>
 
@@ -129,7 +126,7 @@ if ($_SESSION['REC']['ID']>0) {
 
                 <td id="kart_tab_td_2">
 
-                    <input type="text" name="kad_ievadits" value="<?php echo $rec['kad_ievadits']; ?>"></td>
+                    <input type="text" name="kad_ievadits" value="<?php echo $rec['kad_ievadits']; ?>" disabled></td>
                 <td id="kart_tab_td_3"></td>
             </tr>
 

@@ -18,7 +18,7 @@ include "konekcija.php";
 
 
 
-$saraksts=sqltoarray(' * ','transports'," izbraucis='0000-00-00 00:00:00' ",$db);
+$saraksts=sqltoarray(' * ','transports'," status>-1 and status<10 ",$db);
 
 if (isset($_POST['sub_iekr_izkr']) or isset($_POST['sub_reis_nr']) or isset($_POST['sub_kart_saglabat'])) {
 
@@ -92,15 +92,25 @@ if (isset($_POST['sub_iekr_izkr']) or isset($_POST['sub_reis_nr']) or isset($_PO
 
 //###################  Tabulas dati  ################################################
 
-    $saraksts = sqltoarray(' * ', 'transports', '', $db);
+    $saraksts = sqltoarray(' * ', 'transports', ' status<10 ', $db);
 }
+// ################   Reisa kartiņas atvēršana  #####################################
+if (isset($_GET['reisa_id'])) {
+    $reisa_id = $_GET['reisa_id'];
+
+
+
+}
+
+
+
 
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <link rel="stylesheet" type="text/css" href="pretenz.css" />
+    <link rel="stylesheet" type="text/css" href="kpp.css" />
     <link rel="stylesheet" type="text/css" href="teksti.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="jquery/jquery-ui.theme.min.css">
@@ -130,44 +140,65 @@ if ($_GET['navig']=='mnSaraksts') {?>
     <div id="divView" style="width:100%;"><!-- Saraksta rāmis  -->
             <table id="tabTitle" style="width:100%;">
                 <tr>
-                    <td style="width:3%;text-align: center;background: darkgray;color:ivory;">Vieta</td>
-                    <td style="width:5%;text-align: center;background: darkgray;color:ivory;">Reiss</td>
-                    <td style="width:20%;text-align: center;background: darkgray;color:ivory;">Klients</td>
-                    <td style="width:18%;text-align: center;background: darkgray;color:ivory;">Krava</td>
-                    <td style="width:8%;text-align: center;background: darkgray;color:ivory;">Iekraut/Izkraut</td>
-                    <td style="width:8%;text-align: center;background: darkgray;color:ivory;">Status</td>
-                    <td style="width:15%;text-align: center;background: darkgray;color:ivory;">Dosies uz</td>
-                    <td style="width:7%;text-align: center;background: darkgray;color:ivory;">Maš.Nr</td>
-                    <td style="width:3%;text-align: center;background: darkgray;color:ivory;">Instrumenti</td>
+                    <td style="width:2%;text-align: center;background: darkgray;color:ivory;"></td>
+                    <td style="width:2%;text-align: center;background: darkgray;color:ivory;">ID</td>
+                    <td style="width:5%;text-align: center;background: darkgray;color:ivory;">Kompānija</td>
+                    <td style="width:8%;text-align: center;background: darkgray;color:ivory;">Datums</td>
+                    <td style="width:10%;text-align: center;background: darkgray;color:ivory;">Šoferis</td>
+                    <td style="width:10%;text-align: center;background: darkgray;color:ivory;">A/M num.</td>
+                    <td style="width:10%;text-align: center;background: darkgray;color:ivory;">Laiks, iebrauca</td>
+                    <td style="width:10%;text-align: center;background: darkgray;color:ivory;">Laiks, izbrauca</td>
+                    <td style="width:8%;text-align: center;background: darkgray;color:ivory;">Pasūtījuma num.</td>
+                    <td style="width:25%;text-align: center;background: darkgray;color:ivory;">Komentāri / Apraksts</td>
                 </tr>
             </table>
         <?php foreach($saraksts  as $rec ) { ?>
 
-        <div id="dvIeraksts" style="width:100%;border:solid 1px red;" >
+        <div id="dvIeraksts" style="width:100%;border-bottom-color:red;" >
             <table id="tabList" style="width:100%;">
                 <tr>
-                    <td style="width:3%;background: gray;color:ivory;"><?php echo $rec['kur_ievadits']; ?></td>
-                    <td style="width:5%;text-align: center;background: gray;color:ivory;"><?php echo $rec['reisa_nr']; ?></td>
-                    <td style="width:20%;text-align: center;background: gray;color:ivory;"><?php echo $rec['klients']; ?></td>
-                    <td style="width:18%;text-align: center;background: gray;color:ivory;"><?php echo $rec['krava']; ?></td>
-                    <td style="width:8%;text-align: center;background: gray;color:ivory;"><?php echo $rec['iekraut_izkraut']; ?></td>
-                    <td style="width:8%;text-align: center;background: gray;color:ivory;"><?php echo $rec['status']; ?></td>
-                    <td style="width:15%;text-align: center;background: gray;color:ivory;"><?php echo $rec['devas_uz']; ?></td>
-                    <td style="width:7%;text-align: center;background: gray;color:ivory;"><?php echo $rec['masinas_nr'].'/'.$rec['piekabes_nr']; ?></td>
-                    <td style="width:3%;text-align: center;background: gray;color:ivory;">Instrumenti</td>
+                    <td style="width:2%;text-align: center;background: darkgray;color:ivory;"></td>
+                    <td style="width:2%;text-align: center;background: darkgray;color:ivory;"><a href="?reisa_id=' <?php echo $rec['ID']; ?>'" title="Atvērt"><?php echo $rec['ID']; ?></td>
+                    <td style="width:5%;text-align: center;background: gray;color:ivory;"><?php echo $rec['kompanija']; ?></td>
+                    <td style="width:8%;text-align: center;background: gray;color:ivory;"><?php echo $rec['rec_time']; ?></td>
+                    <td style="width:10%;text-align: center;background: gray;color:ivory;"><?php echo $rec['vaditajs']; ?></td>
+                    <td style="width:10%;text-align: center;background: gray;color:ivory;"><?php echo $rec['masinas_nr']; ?></td>
+                    <td style="width:10%;text-align: center;background: gray;color:ivory;"><?php echo $rec['iebrauca']; ?></td>
+                    <td style="width:10%;text-align: center;background: gray;color:ivory;"><?php echo $rec['izbrauca']; ?></td>
+                    <td style="width:8%;text-align: center;background: gray;color:ivory;"><?php echo $rec['pasut_nr']; ?></td>
+                    <td style="width:25%;text-align: center;background: gray;color:ivory;"><?php echo $rec['komentars']; ?></td>
                 </tr>
             </table>
 
         </div>
     <?php } ?>
     </div><!--divView    -->
-<?php } }?>
-    <?php if ($_GET['navig']=='mnNew') {
-        include 'kartina_jauns.php';
-    } ?>
-    <?php if ($_GET['navig']=='mnArhiv') {?>
+<?php } }
+if (isset($_GET['navig'])) {
+    if ($_GET['navig'] == 'mnNew') {
+        $reis=max_reis($db)+1;
+        $_SESSION['REISS']['ID']=$reis;
+        $_SESSION['REISS']['IEKRAUT']=1;
+        $_SESSION['REISS']['KLIENTS']="";
+        $_SESSION['REISS']['VALSTS']="";
+        $_SESSION['REISS']['KRAVA']="";
+        $_SESSION['REISS']['PILSĒTA']="";
+        $_SESSION['REISS']['KOMPANIJA']="";
+        $_SESSION['REISS']['LAIKS']="";
+        $_SESSION['REISS']['VADITAJS']="";
+        $_SESSION['REISS']['MAS_NR']="";
+        $_SESSION['REISS']['IEBRAUCA']="";
+        $_SESSION['REISS']['IZBRAUCA']="";
+        $_SESSION['REISS']['PASUT_NR']="";
+        $_SESSION['REISS']['KOMENTARS']="";
+        $_SESSION['REISS']['STADIJA']="NEW";  // EDIT, VIEW, DELETE
 
-    <?php } ?>
+        include 'kartina_jauns.php';
+    }
+    if ($_GET['navig'] == 'mnArhiv') {
+
+    }
+}?>
 
 </form>
 </body>

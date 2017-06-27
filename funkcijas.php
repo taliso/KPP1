@@ -420,3 +420,39 @@ function max_reis($db){
     $max_id=$m['max_id'];
     return $max_id;
 }
+function vai_ir($table,$field,$variable,$db){
+    $sql = "select COUNT(ID) as skaits from ".$table." where ".$field."='".$variable."'" ;
+    $q = $db->query($sql);
+    $m = $q->fetch(PDO::FETCH_ASSOC);
+    $skaits=$m['skaits'];
+    return $skaits;
+}
+function insert_transp($db){
+    $sql = "INSERT INTO transports SET ";
+
+    $sql=$sql." kompanija=:kompanija,
+        vaditajs=:vaditajs,
+        masinas_nr=:masinas_nr,
+        piekabes_nr=:piekabes_nr,
+        iebrauca=:iebrauca,
+        izbrauca=:izbraucis,
+        pasut_nr=:pasut_nr,
+        rec_time=:rec_time,
+        komentars=:komentars";
+
+    $q = $db->prepare($sql);
+
+    $data = array(
+        'kompanija' => $_SESSION['TRANSP']['KOMPANIJA'],
+        'vaditajs' => $_SESSION['TRANSP']['VADITAJS'],
+        'masinas_nr' => $_SESSION['TRANSP']['MAS_NR'],
+        'piekabes_nr' => $_SESSION['TRANSP']['PIEK_NR'],
+        'iebrauca' => $_SESSION['TRANSP']['IEBRAUCA'],
+        'izbrauca' => $_SESSION['TRANSP']['IZBRAUCA'],
+        'pasut_nr' => $_SESSION['TRANSP']['PASUT_NR'],
+        'rec_time' => date('0000-00-00 H:i:s'),
+        'komentars' => $_SESSION['TRANSP']['KOMENTARI']);
+
+    $q->execute($data);
+
+}

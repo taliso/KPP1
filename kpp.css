@@ -1,0 +1,193 @@
+body {
+    background-color: #555656;
+}
+#caurl_1h {
+    border: solid 1px blue;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+    background: #2b1e80;
+    color:yellow;
+}
+#caurl_2h {
+    border: solid 1px blue;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:20%;
+    background: #2b1e80;
+    color:yellow;
+
+}
+#caurl_3h {
+    border: solid 1px blue;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+    background: #2b1e80;
+    color:yellow;
+
+}
+#caurl_4h {
+    border: solid 1px blue;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+    background: #2b1e80;
+    color:yellow;
+
+}
+#caurl_5h {
+    border: solid 1px blue;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+    background: #2b1e80;
+    color:yellow;
+
+}
+#caurl_6h {
+    border: solid 1px blue;
+
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+    background: #2b1e80;
+    color:yellow;
+
+}
+#caurl_7h {
+    border: solid 1px blue;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+    background: #2b1e80;
+    color:yellow;
+
+}
+#caurl_8h {
+    border: solid 1px blue;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+    background: #2b1e80;
+    color:yellow;
+
+}
+
+
+
+
+#caurl_1 {
+
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+    color:navajowhite;
+    border-bottom: solid 1px red;
+}
+#caurl_2 {
+    color:navajowhite;
+    border-bottom: solid 1px red;
+    text-align: left;
+    font-family: Verdana;
+    font-size: 14px;
+    width:20%;
+}
+#caurl_3 {
+    color:navajowhite;
+    border-bottom: solid 1px red;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+}
+#caurl_4 {
+    color:navajowhite;
+    border-bottom: solid 1px red;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+}
+#caurl_5 {
+    color:navajowhite;
+    border-bottom: solid 1px red;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+}
+#caurl_6 {
+    color:navajowhite;
+    border-bottom: solid 1px red;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+}
+#caurl_7 {
+    color:navajowhite;
+    border-bottom: solid 1px red;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+}
+#caurl_8 {
+    color:navajowhite;
+    border-bottom: solid 1px red;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+    width:10%;
+}
+#dvAlert {
+    background: #ffb9b7;
+
+
+}
+#spAlert {
+    color: red;
+    text-align: center;
+    font-family: Verdana;
+    font-size: 14px;
+
+}
+#spList {
+    color:navajowhite;
+    font-family: Verdana;
+    font-size: 13px;
+}
+#Info{
+    width:100%;
+    float: left;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    padding: 7px;
+    overflow: hidden;
+    outline: medium none;
+    border: medium none;
+    border-radius: 7px;
+    color: rgb(46, 71, 3);
+    text-decoration: none;
+    text-align: center;
+    text-indent: 0px;
+    text-overflow: ellipsis;
+    letter-spacing: 0px;
+    white-space: normal;
+    word-spacing: 0px;
+    background: rgb(132, 216, 155) none repeat scroll 0% 0%;
+    box-shadow: 5px 8px 7px -2px rgb(90, 90, 90);
+    margin: 4px;
+}
